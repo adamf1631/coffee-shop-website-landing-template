@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
+
+html{
+  scroll-behavior: smooth;
+}
+body,
+#slider,
+.wrap,
+.slide-content {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+footer{
+  background-color:burlywood;
+  bottom: 0;
+  color: #fff;
+  text-align: center;
+  width: 100%
+}
+/*css for header slideshow */
+.wrap {
+  position: relative;
+}
+
+.slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.slide1 {
+  background-image: url(../mainimages/image1.jpg); /*<-----------slide 1 image---images must be 1920px in width*/
+}
+.slide2 {
+  background-image: url(../mainimages/image2.jpg);/*<-----------slide 1 image---images must be 1920px in width*/
+}
+.slide3 {
+  background-image: url(../mainimages/image3.jpg);/*<-----------slide 1 image---images must be 1920px in width*/
+}
+
+.slide-content {
+  font-family: 'EB Garamond', serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.slide-content span {
+  font-size: 10rem;
+  color:#E5E5E5;
+}
+.slide-content p{
+  font-size: 2rem;
+  color:#E5E5E5;
+  padding-top: 0;
+}
+@media only screen and (max-width: 600px) {
+  .slide-content span {
+    font-size: 5rem;
+  }
+  #features,#price,#about{
+    overflow: scroll;
+    height:auto;
+	  margin: 0;
+	  width: auto;
+	  padding-top: 3rem;
+  }
+}
+/* CSS for Features Section */
+#features{
+  background-image: url(../mainimages/features-BG.jpeg);/*<----------------- features BG image link---*/
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height:100vh;
+  overflow: hidden;
+  color:#fff;
+}
+/* CSS for Price section*/
+#price{
+  background-image: url(../mainimages/bricks-BG.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height:100vh;
+  overflow: hidden;
+  color:#fff;
+}
+#price li{
+  text-decoration: none;
+}
+#price-blocks{
+  margin-top: 30%;
+  width:80%;
+
+}
+#price-blocks .col-sm{
+  background-color: rgb(51,51,51,0.5);
+  border:thin solid #333;
+}
+
+/*CSS for about section  */
+#about{
+  background-image: url(../mainimages/about-BG.jpeg);/*<----------------- features BG image link---*/
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height:100vh;
+  overflow: hidden;
+}
+#about container{
+  width: 25%;
+  right:50%
+  top:35%;
+}
+.profile-img{
+  border-radius: 50%;
+  float:right;
+  padding-top: 22%;
+}
+.aboutinfo{
+    text-align:right;
+    float:right;
+    color:#502A1C;
+    padding-left: 40%;
+}
+
+/* CSS for Coffee Form */
+.coffeeform{
+  padding-top:15%;
+  color: #333;
+  font-size: 1rem;
+}
+
+.coffeeform h4{
+  text-align: center;
+  font-size: 3rem;
+  color:#502A1C;
+}
+/* TOP BUTTON CSS */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #502A1C;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+#myBtn:hover {
+  opacity: 0.5;
+}
